@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,200;1,300&family=Poppins:ital,wght@0,100;0,200;0,800;1,100;1,300;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/*-------------------HEADER-------------------*/
+header{
+    background-color:  rgb(250, 215, 209);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 150px;
+    height: 150px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 30px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+/*------------------PAGE-INDEX------------------*/
+/*------------------MAIN-----------------*/
+.hero{
+    color: white;
+    text-align: center;
+    background-image: url(../img/fondo3.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.hero h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero p{
+    font-size: 40px;
+}
+.aniadidosrecientemente{
+    height: 400px;
+    background-color: rgb(214, 250, 214);
+}
+.aniadidosrecientemente h2{
+    text-align: center;
+    font-size: 4vh;
+    padding: 20px;
+    color: lightblue;
+}
+.aniadidosrecientemente .divpadre{
+    display: flex;
+    justify-content: space-around;
+}
+.aniadidosrecientemente .divpadre div{
+    border: 2px solid rgb(255, 210, 203);
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+.aniadidosrecientemente .divpadre div h3{
+    font-weight: 400;
+}
+.aniadidosrecientemente div img{
+    width: 200px;
+    height: 200px;
+}
+.aniadidosrecientemente div a{
+    color: white;
+    text-decoration: none;
+    background-color: lightskyblue;
+    padding: 3px;
+}
+.galeria{
+    background-color: rgb(214, 250, 214);
+}
+.galeria h2{
+    padding: 20px;
+    color: lightblue;
+}
+.galeria div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.galeria div img{
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+}
+.galeria .link{
+    display: flex;
+    justify-content: end;
+}
+.galeria div a{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: lightskyblue;
+    border: 2px solid white;
+    font-weight: 800;
+}
+.comentarios{
+    height: 70vh;
+    background-image: url(../img/fondo6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.comentarios h2{
+    text-align: center;
+    color: white;
+}
+.comentarios .contenedor{
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.comentarios .contenedor div{
+    background-color: rgb(250, 215, 209);
+    height: 200px;
+    width: 300px;
+    border: 2px dotted white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.comentarios .contenedor div h3{
+    text-align: center;
+}
+.comentarios .contenedor div p{
+    text-align: justify;
+}
+/* -----------------PAGE-CATÁLOGO--------------- */
+.galeria-cactus{
+    background-color: rgb(214, 250, 214);
+}
+.galeria-cactus .titulo h2{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.grid-galeria1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 400px;
+    gap: 10px;
+}
+.grid1-item img{
+    height: 100%;
+    width: 100%;
+}
+.cactus-2{
+    grid-row: span 2;
+}
+.cactus-4{
+    grid-row: span 2;
+}
+.cactus-6{
+    grid-column: span 2;
+}
+.cactus-7{
+    grid-column: 1 / 3;
+}
+/* -----------------PAGE-SERVICIOS-------------- */
+.servicios div h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 100px;
+    background-color: rgb(214, 250, 214);
+    color: lightblue;
+}
+.bodas{
+    background-image: url(../img/servicios/bodas.jpg);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bodas h3{
+    color: white;
+}
+.cumpleanios{
+    background-image: url(../img/servicios/cumpleanios.jpg);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cumpleanios h3{
+    color: white;
+}
+.bautismos{
+    background-image: url(../img/servicios/bautismos.jpg);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bautismos h3{
+    color: white;
+}
+.almuerzosycenas{
+    background-image: url(../img/servicios/almuerzosycenas.jpg);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.almuerzosycenas{
+    color: white;
+}
+.servicios p{
+    font-weight: 900;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(214, 250, 214);
+    color: lightblue;
+}
+/*---------------FOOTER-------------------*/
+footer{
+    background-color:  rgb(250, 215, 209);
+}
+footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div div{
+    display: flex;
+    flex-direction: column;
+}
+.div-logos{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.logoinstagram{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.logofacebook{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.logowhatsapp{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 60px;
+    height: 60px;
+}
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.ubicacion h2{
+    margin: 20px;
+}
+.ubicacion iframe{
+    height: 200px;
+    width: 500px;
+}
+footer h3{
+    text-align: center;
+    height: 20px;
+}
+
+/*!--------MEDIA QUERY-----------*/
+/*-----------PAGE-INDEX------------*/
+@media screen and (max-width:1260px){
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero p{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:1000px){
+    footer div{
+        display:flex;
+        flex-direction: column;
+    }
+    footer div div h2{
+        text-align: center;
+        margin: 20px;
+    }
+    .ubicacion h2{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:900px){
+    .aniadidosrecientemente .divpadre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .aniadidosrecientemente{
+        height: 100%;
+    }
+}
+@media screen and (max-width:800px){
+    .galeria div img{
+        margin: 10px;
+        height: 300px;
+        width: 300px;
+    }
+}
+@media screen and (max-width:700px){
+    footer h3{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:610px){
+    .comentarios{
+        height: 100%;
+    }
+    .comentarios h2{
+        margin: 20px;
+    }
+}
+@media screen and (max-width:520px){
+    .ubicacion iframe{
+        height: 150px;
+        width: 300px;
+    }
+}
+@media screen and (max-width:400px){
+    .hero{
+        height: 400px;
+        background-attachment: local;
+    }
+    .hero h1{
+        font-size: 25px;
+    }
+    .hero p{
+        font-size: 15px;
+    }
+    
+}
