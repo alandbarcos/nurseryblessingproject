@@ -10,9 +10,9 @@ body{
 /*-------------------HEADER-------------------*/
 header{
     background-color:  rgb(250, 215, 209);
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 header img{
     width: 150px;
@@ -58,8 +58,9 @@ header nav ul li a{
     background-color: rgb(214, 250, 214);
 }
 .aniadidosrecientemente h2{
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 4vh;
+    font-size: 3vh;
     padding: 20px;
     color: lightblue;
 }
@@ -70,11 +71,12 @@ header nav ul li a{
 .aniadidosrecientemente .divpadre div{
     border: 2px solid rgb(255, 210, 203);
     width: 200px;
-    height: 300px;
+    height: 100%;
     text-align: center;
 }
 .aniadidosrecientemente .divpadre div h3{
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 350;
 }
 .aniadidosrecientemente div img{
     width: 200px;
@@ -85,13 +87,16 @@ header nav ul li a{
     text-decoration: none;
     background-color: lightskyblue;
     padding: 3px;
+    font-family: 'Montserrat', sans-serif;
 }
 .galeria{
     background-color: rgb(214, 250, 214);
 }
 .galeria h2{
+    font-family: 'Montserrat', sans-serif;
     padding: 20px;
     color: lightblue;
+    font-weight: 500;
 }
 .galeria div{
     display: flex;
@@ -128,6 +133,7 @@ header nav ul li a{
 .comentarios h2{
     text-align: center;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 .comentarios .contenedor{
     color: white;
@@ -137,17 +143,18 @@ header nav ul li a{
 }
 .comentarios .contenedor div{
     background-color: rgb(250, 215, 209);
-    height: 200px;
+    height: 100%;
     width: 300px;
     border: 2px dotted white;
     padding: 10px;
-    margin-bottom: 30px;
 }
 .comentarios .contenedor div h3{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .comentarios .contenedor div p{
     text-align: justify;
+    font-family: 'Montserrat', sans-serif;
 }
 /* -----------------PAGE-CATÁLOGO--------------- */
 .galeria-cactus{
@@ -258,6 +265,7 @@ header nav ul li a{
 /*---------------FOOTER-------------------*/
 footer{
     background-color:  rgb(250, 215, 209);
+    height: 100%;
 }
 footer div {
     display: flex;
@@ -267,6 +275,10 @@ footer div {
 footer div div{
     display: flex;
     flex-direction: column;
+}
+footer div div h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
 }
 .div-logos{
     display: flex;
@@ -299,6 +311,7 @@ footer div div{
 }
 .ubicacion h2{
     margin: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 .ubicacion iframe{
     height: 200px;
@@ -306,7 +319,8 @@ footer div div{
 }
 footer h3{
     text-align: center;
-    height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 /*!--------MEDIA QUERY-----------*/
@@ -341,6 +355,15 @@ footer h3{
     .aniadidosrecientemente{
         height: 100%;
     }
+    .aniadidosrecientemente .divpadre div{
+        margin: 10px;
+    }
+    .comentarios{
+        height: 100%;
+    }
+    .contenedor div{
+        margin: 10px;
+    }
 }
 @media screen and (max-width:800px){
     .galeria div img{
@@ -352,6 +375,9 @@ footer h3{
 @media screen and (max-width:700px){
     footer h3{
         font-size: 10px;
+    }
+    .galeria .link{
+        margin-right: 10px;
     }
 }
 @media screen and (max-width:610px){
@@ -367,6 +393,9 @@ footer h3{
         height: 150px;
         width: 300px;
     }
+    .galeria h2{
+        text-align: center;
+    }
 }
 @media screen and (max-width:400px){
     .hero{
@@ -379,5 +408,9 @@ footer h3{
     .hero p{
         font-size: 15px;
     }
-    
+    .galeria div img{
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+    }
 }
