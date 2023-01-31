@@ -60,7 +60,8 @@ header nav ul li a{
 .aniadidosrecientemente h2{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 3vh;
+    font-size: 35px;
+    font-weight: 700;
     padding: 20px;
     color: lightblue;
 }
@@ -69,6 +70,7 @@ header nav ul li a{
     justify-content: space-around;
 }
 .aniadidosrecientemente .divpadre div{
+    font-family: 'Montserrat', sans-serif;
     border: 2px solid rgb(255, 210, 203);
     width: 200px;
     height: 100%;
@@ -76,7 +78,8 @@ header nav ul li a{
 }
 .aniadidosrecientemente .divpadre div h3{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 350;
+    font-size: 20px;
+    font-weight: 500;
 }
 .aniadidosrecientemente div img{
     width: 200px;
