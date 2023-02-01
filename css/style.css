@@ -308,22 +308,36 @@ header nav ul li a{
 }
 /* ---------------PAGE-NOSOTROS------------ */
 .acerca-de{
-    background-color: rgb(210, 241, 252);
+    background-color: rgb(214, 250, 214);
 }
 .acerca-de h2{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 20px;
+    color:lightblue;
+    font-size: 40px;
+    font-weight: 500;
 }
 .acerca-de p{
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     text-align: center;
-    color: lightgreen;
+    color: #0000008C;
 }
 .acerca-de img{
     height: 800px;
     width: 100%;
+}
+.autora{
+    background-color: rgb(214, 250, 214);
+}
+.autora h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(255, 210, 203);
 }
 .autora div{
     display: flex;
@@ -332,10 +346,46 @@ header nav ul li a{
 }
 .autora div div{
     width: 50%;
+    margin: 50px;
+}
+.autora div div div{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color: #0000008C;;
 }
 .autora div img{
     height: 500px;
-    width: 500px;
+    width: 300px;
+    margin-right: 50px;
+}
+/* ---------------PAGE-CONTACTO------------ */
+section{
+    background-color: rgb(210, 241, 252);
+}
+section h1{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-datos{
+    /* margin-left: 100px; */
+}
+.container-consulta div{
+    width: 600px;
+}
+.container-consulta div h2{
+    text-align: center;
+}
+.container-consulta div textarea{
+    width: 100%;
 }
 /* ---------------FOOTER------------------- */
 footer{
