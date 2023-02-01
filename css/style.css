@@ -375,9 +375,9 @@ form{
     justify-content: space-around;
     align-items: center;
 }
-.container-datos{
-    /* margin-left: 100px; */
-}
+/* .container-datos{
+    margin-left: 100px;
+} */
 .container-consulta div{
     width: 600px;
 }
