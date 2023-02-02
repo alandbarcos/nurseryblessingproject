@@ -365,6 +365,7 @@ header nav ul li a{
     background-color: rgb(214, 250, 214);
     color: lightblue;
     margin: 0;
+    margin-right: 20px;
 }
 /* ---------------PAGE-NOSOTROS------------ */
 .acerca-de{
