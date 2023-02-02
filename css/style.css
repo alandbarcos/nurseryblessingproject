@@ -491,13 +491,22 @@ footer div div h2{
     height: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    transition: 1.5s;
+}
+.logoinstagram:hover{
+    transform: scale(0.75);
 }
 .logofacebook{
     width: 50px;
     height: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    transition: 1.5s;
 }
+.logofacebook:hover{
+    transform: scale(0.75);
+}
+
 .logowhatsapp{
     position: fixed;
     right: 50px;
