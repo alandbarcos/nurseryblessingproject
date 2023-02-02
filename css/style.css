@@ -232,14 +232,19 @@ header nav ul li a{
     grid-row: 2 / 4;
 }
 /* -----------------PAGE-SERVICIOS-------------- */
+.servicios{
+    background-color: rgb(214, 250, 214)
+}
 .servicios div h1{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     height: 100px;
+    padding: 10px;
     background-color: rgb(214, 250, 214);
     color: lightblue;
+    margin: 0;
 }
 .bodas{
     background-image: url(../img/servicios/bodas.jpg);
@@ -254,6 +259,9 @@ header nav ul li a{
 }
 .bodas h3{
     color: white;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 .cumpleanios{
     background-image: url(../img/servicios/cumpleanios.jpg);
@@ -268,6 +276,9 @@ header nav ul li a{
 }
 .cumpleanios h3{
     color: white;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 .bautismos{
     background-image: url(../img/servicios/bautismos.jpg);
@@ -282,6 +293,9 @@ header nav ul li a{
 }
 .bautismos h3{
     color: white;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 .almuerzosycenas{
     background-image: url(../img/servicios/almuerzosycenas.jpg);
@@ -294,8 +308,11 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
 }
-.almuerzosycenas{
+.almuerzosycenas h3{
     color: white;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 .servicios p{
     font-weight: 900;
@@ -305,6 +322,7 @@ header nav ul li a{
     align-items: center;
     background-color: rgb(214, 250, 214);
     color: lightblue;
+    margin: 0;
 }
 /* ---------------PAGE-NOSOTROS------------ */
 .acerca-de{
@@ -352,7 +370,7 @@ header nav ul li a{
     display: flex;
     flex-direction: column;
     text-align: justify;
-    color: #0000008C;;
+    color: #0000008C;
 }
 .autora div img{
     height: 500px;
@@ -375,9 +393,20 @@ form{
     justify-content: space-around;
     align-items: center;
 }
-/* .container-datos{
+.container-datos{
     margin-left: 100px;
-} */
+    color: #0000008C;
+}
+.container-datos div{
+    display: flex;
+    flex-direction: column;
+}
+.container-datos div input{
+    width: 600px;
+}
+.container-consulta{
+    color: #0000008C;
+}
 .container-consulta div{
     width: 600px;
 }
@@ -386,6 +415,10 @@ form{
 }
 .container-consulta div textarea{
     width: 100%;
+}
+.container-consulta .botones{
+    display: flex;
+    justify-content: space-around;
 }
 /* ---------------FOOTER------------------- */
 footer{
@@ -450,6 +483,7 @@ footer h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 600;
+    margin: 0;
 }
 
 /*!--------MEDIA QUERY-----------*/
