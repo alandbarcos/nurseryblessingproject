@@ -382,6 +382,7 @@ header nav ul li a{
 .acerca-de p{
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
+    padding: 10px;
     text-align: center;
     color: #0000008C;
 }
@@ -421,10 +422,11 @@ header nav ul li a{
     margin-right: 50px;
 }
 /* ---------------PAGE-CONTACTO------------ */
-section{
+.contacto{
     background-color: rgb(210, 241, 252);
+    height: 500px;
 }
-section h1{
+.contacto h1{
     text-align: center;
     padding: 20px;
     color: white;
@@ -539,13 +541,57 @@ footer h3{
 }
 
 /*!--------MEDIA QUERY-----------*/
-/*-----------PAGE-INDEX------------*/
+@media screen and (max-width:1400px){
+    .contacto{
+        height: 100%;
+    }
+    .contacto form{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-datos{
+        margin: 0;
+    }
+    .container-consulta{
+        margin: 0;
+    }
+    .botones input{
+        margin: 10px;
+    }
+}
+
 @media screen and (max-width:1260px){
     .hero h1{
         font-size: 40px;
     }
     .hero p{
         font-size: 30px;
+    }
+    .servicios div h1{
+        font-size: 30px;
+    }
+    .bodas{
+        height: 300px;
+    }
+    .cumpleanios{
+        height: 300px;
+    }
+    .bautismos{
+        height: 300px;
+    }
+    .almuerzosycenas{
+        height: 300px;
+    }
+    .servicios p{
+        height: 100px;
+        font-size: 15px;
+        text-align: end;
+    }
+    .acerca-de p{
+        font-size: 20px;
+    }
+    .autora div div div p{
+        width: 300px;
     }
 }
 @media screen and (max-width:1000px){
@@ -563,7 +609,6 @@ footer h3{
     .grid2-item{
         grid-column: span 1;
     }
-    
     footer div{
         display:flex;
         flex-direction: column;
@@ -594,6 +639,18 @@ footer h3{
     .contenedor div{
         margin: 10px;
     }
+    .bodas{
+        height: 200px;
+    }
+    .cumpleanios{
+        height: 200px;
+    }
+    .bautismos{
+        height: 200px;
+    }
+    .almuerzosycenas{
+        height: 200px;
+    }
 }
 @media screen and (max-width:800px){
     .galeria div img{
@@ -601,6 +658,17 @@ footer h3{
         height: 300px;
         width: 300px;
     }
+    .servicios p{
+        height: 150px;
+        font-size: 15px;
+    }
+    .acerca-de img{
+        height: 600px;
+    }
+    .acerca-de p{
+        font-size: 15px;
+    }
+
 }
 @media screen and (max-width:700px){
     footer h3{
@@ -609,6 +677,40 @@ footer h3{
     .galeria .link{
         margin-right: 10px;
     }
+    .servicios div h1{
+        font-size: 25px;
+    }
+    .servicios div h3{
+        font-size: 20px;
+    }
+    .autora div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .autora div img{
+        height: 400px;
+        width: 250px;
+        margin: 0;
+    }
+    .autora div div div{
+        text-align: center;
+    }
+    .container-datos div input{
+        width: 400px;
+    }
+    .container-consulta div{
+        width: 100%;
+    }
+    .container-consulta div div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-consulta div textarea{
+        width: 400px;
+    } 
 }
 @media screen and (max-width:610px){
     .comentarios{
@@ -641,6 +743,37 @@ footer h3{
     .carrusel div img{
         height: 350px;
     }
+    .bodas{
+        height: 150px;
+    }
+    .cumpleanios{
+        height: 150px;
+    }
+    .bautismos{
+        height: 150px;
+    }
+    .almuerzosycenas{
+        height: 150px;
+    }
+    .acerca-de h2{
+        font-size: 30px;
+    }
+    .acerca-de img{
+        height: 500px;
+    }
+    .autora h2{
+        font-size: 30px;
+    }
+    .container-consulta{
+        width: 100%;
+    }
+    footer div div h2{
+        font-size: 20px;
+    }
+    .logowhatsapp{
+        right: 25px;
+        bottom: 25px;
+    }
 }
 @media screen and (max-width:520px){
     .ubicacion iframe{
@@ -650,6 +783,26 @@ footer h3{
     .galeria h2{
         text-align: center;
     }
+    .servicios div h1{
+        font-size: 15px;
+    }
+    .servicios p{
+        height: 100px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .acerca-de img{
+        height: 350px;
+    }
+    .container-datos div input{
+        width: 250px;
+    }
+    .container-consulta div textarea{
+        height: 200px;
+        width: 275px;
+
+    } 
+
 }
 @media screen and (max-width:400px){
     .hero{
@@ -669,5 +822,10 @@ footer h3{
     }
     .carrusel div img{
         height: 250px;
+    }
+    .servicios p{
+        height: 100px;
+        font-size: 10px;
+        margin-left: 10px;
     }
 }
