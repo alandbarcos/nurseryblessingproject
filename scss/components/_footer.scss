@@ -1,5 +1,6 @@
 /*------------------FOOTER-----------------*/
 footer{
+    background-color: nth($colores-bg, 1);
     div{
         display: flex;
         justify-content: space-around;
@@ -11,6 +12,7 @@ footer{
                 font-family: 'Montserrat', sans-serif;
                 font-size: 30px;
                 font-weight: 600;
+                text-align: center;
             }
             .div-logos{
                 display: flex;

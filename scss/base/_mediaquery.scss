@@ -168,7 +168,9 @@
 
 @media screen and (max-width:700px){
     footer{
-        font-size: 10px;
+        h3{
+            font-size: 10px;
+        }
     }
         .galeria{
             .link{
@@ -181,7 +183,22 @@
                     font-size: 25px;
                 }
             }
-            div{
+            .bodas{
+                h3{
+                    font-size: 20px;
+                }
+            }
+            .cumpleanios{
+                h3{
+                    font-size: 20px;
+                }
+            }
+            .bautismos{
+                h3{
+                    font-size: 20px;
+                }
+            }
+            .almuerzosycenas{
                 h3{
                     font-size: 20px;
                 }
@@ -350,6 +367,7 @@
             font-size: 12px;
             margin-left: 10px;
         }
+    }
         .acerca-de{
             img{
                 height: 350px;
@@ -376,8 +394,6 @@
             }
         }
     }
-}
-
 @media screen and (max-width:400px){
     .hero{
         height: 400px;

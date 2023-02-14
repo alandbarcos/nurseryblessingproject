@@ -5,7 +5,7 @@
         background-image: url(../img/fondo3.jpg);
         background-position: center;
         background-attachment: fixed;
-        @include tamanio (100%, 700px);
+        @include tamanio (700px, 100%);
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -174,18 +174,18 @@
                         transform: scale(1.02);
                     }
                 }
-                .cactus-2{
-                    grid-row: span 2;
-                }
-                .cactus-4{
-                    grid-row: span 2;
-                }
-                .cactus-6{
-                    grid-column: span 2;
-                }
-                .cactus-7{
-                    grid-column: 1 / 3;
-                }
+            }
+            .cactus-2{
+                grid-row: span 2;
+            }
+            .cactus-4{
+                grid-row: span 2;
+            }
+            .cactus-6{
+                grid-column: span 2;
+            }
+            .cactus-7{
+                grid-column: 1 / 3;
             }
         }
     }
@@ -252,15 +252,15 @@
                         -moz-box-shadow: 15px -19px 14px 2px rgba(143,141,141,0.75);
                     }
                 }
-                .maceta1{
-                    grid-row: 1 / 3;
-                }
-                .maceta2{
-                    grid-column: span 2;
-                }
-                .maceta4{
-                    grid-row: 2 / 4;
-                }
+            }
+            .maceta1{
+                grid-row: 1 / 3;
+            }
+            .maceta2{
+                grid-column: span 2;
+            }
+            .maceta4{
+                grid-row: 2 / 4;
             }
         }
     }
@@ -287,7 +287,7 @@
             }
         }
         .cumpleanios{
-            background-image: url(../img/servicios/bodas.jpg);
+            background-image: url(../img/servicios/cumpleanios.jpg);
             @extend %bg-servicios;
             @extend %flex-center;
             h3{
@@ -295,7 +295,7 @@
             }
         }
         .bautismos{
-            background-image: url(../img/servicios/bodas.jpg);
+            background-image: url(../img/servicios/bautismos.jpg);
             @extend %bg-servicios;
             @extend %flex-center;
             h3{
@@ -303,7 +303,7 @@
             }
         }
         .almuerzosycenas{
-            background-image: url(../img/servicios/bodas.jpg);
+            background-image: url(../img/servicios/almuerzosycenas.jpg);
             @extend %bg-servicios;
             @extend %flex-center;
             h3{
