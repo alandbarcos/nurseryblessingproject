@@ -1,0 +1,636 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,200;1,300&family=Poppins:ital,wght@0,100;0,200;0,800;1,100;1,300;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+/*-----------EXTENDS-----------*/
+.servicios div h1, .servicios .bodas, .servicios .cumpleanios, .servicios .bautismos, .servicios .almuerzosycenas, .autora div {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.servicios .bodas, .servicios .cumpleanios, .servicios .bautismos, .servicios .almuerzosycenas {
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.servicios .bodas h3, .servicios .cumpleanios h3, .servicios .bautismos h3, .servicios .almuerzosycenas h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif; }
+
+/*-------------------HEADER-------------------*/
+header {
+  background-color: #fad7d1; }
+  header nav div a img {
+    width: 150px;
+    height: 150px; }
+  header nav div div ul {
+    list-style: none;
+    display: flex; }
+    header nav div div ul li {
+      margin: 30px; }
+      header nav div div ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 900; }
+  header nav div div .d-flex button {
+    color: #0000008C;
+    border: solid 1px #0000008C;
+    transition: 1s; }
+    header nav div div .d-flex button:hover {
+      color: green;
+      background-color: lightblue;
+      border: dotted 1px green; }
+
+/*------------------PAGE-INDEX------------------*/
+.hero {
+  color: white;
+  text-align: center;
+  background-image: url(../img/fondo3.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 700px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .hero h1 {
+    font-size: 50px;
+    font-weight: 600; }
+  .hero p {
+    font-size: 40px; }
+
+.aniadidosrecientemente {
+  height: 400px;
+  background-color: #d6fad6; }
+  .aniadidosrecientemente h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 20px;
+    color: lightblue; }
+  .aniadidosrecientemente .divpadre {
+    display: flex;
+    justify-content: space-around; }
+    .aniadidosrecientemente .divpadre div {
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 10px;
+      border: 2px solid #ffd2cb;
+      height: 100%;
+      width: 200px;
+      text-align: center; }
+      .aniadidosrecientemente .divpadre div img {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
+      .aniadidosrecientemente .divpadre div h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 500; }
+      .aniadidosrecientemente .divpadre div a {
+        color: white;
+        text-decoration: none;
+        background-color: #d2f1fc;
+        padding: 3px;
+        font-family: 'Montserrat', sans-serif;
+        transition: 1s; }
+        .aniadidosrecientemente .divpadre div a:hover {
+          background-color: #ffd2cb;
+          color: green;
+          border: 2px solid white; }
+
+.galeria {
+  background-color: #d6fad6; }
+  .galeria h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    color: lightblue;
+    font-weight: 700; }
+  .galeria div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .galeria div img {
+      margin: 10px;
+      height: 400px;
+      width: 400px;
+      border-radius: 5px;
+      transition: 1s; }
+      .galeria div img:hover {
+        transform: scale(1.1); }
+  .galeria .link {
+    display: flex;
+    justify-content: end; }
+    .galeria .link a {
+      margin: 10px;
+      padding: 10px;
+      text-decoration: none;
+      color: lightblue;
+      border: 2px solid white;
+      font-weight: 800;
+      transition: 0.5s; }
+      .galeria .link a:hover {
+        background-color: #fad7d1;
+        color: white; }
+
+.comentarios {
+  height: 70vh;
+  background-image: url(../img/fondo6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  .comentarios h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600; }
+  .comentarios .contenedor {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .comentarios .contenedor div {
+      background-color: #fad7d1;
+      height: 100%;
+      width: 300px;
+      border: 2px dotted white;
+      padding: 10px; }
+      .comentarios .contenedor div h3 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500; }
+      .comentarios .contenedor div p {
+        text-align: justify;
+        font-family: 'Montserrat', sans-serif; }
+
+/* -----------------PAGE-CATÁLOGO--------------- */
+.galeria-cactus {
+  background-color: #d6fad6; }
+  .galeria-cactus .titulo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px; }
+    .galeria-cactus .titulo h2 {
+      text-align: center;
+      margin: 30px;
+      padding: 10px;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      border: 2px solid lightblue; }
+  .galeria-cactus .grid-galeria1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    gap: 10px; }
+    .galeria-cactus .grid-galeria1 .grid1-item img {
+      height: 100%;
+      width: 100%;
+      transition: 1s; }
+      .galeria-cactus .grid-galeria1 .grid1-item img:hover {
+        transform: scale(1.02); }
+    .galeria-cactus .grid-galeria1 .grid1-item .cactus-2 {
+      grid-row: span 2; }
+    .galeria-cactus .grid-galeria1 .grid1-item .cactus-4 {
+      grid-row: span 2; }
+    .galeria-cactus .grid-galeria1 .grid1-item .cactus-6 {
+      grid-column: span 2; }
+    .galeria-cactus .grid-galeria1 .grid1-item .cactus-7 {
+      grid-column: 1 / 3; }
+
+.galeria-suculentas {
+  background-color: #d6fad6; }
+  .galeria-suculentas .carrusel .titulo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px; }
+    .galeria-suculentas .carrusel .titulo h2 {
+      text-align: center;
+      margin: 30px;
+      padding: 10px;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      border: 2px solid lightblue; }
+  .galeria-suculentas .carrusel div div div img {
+    height: 600px;
+    width: 100%; }
+
+.galeria-macetas {
+  background-color: #d6fad6;
+  padding-top: 10px; }
+  .galeria-macetas .titulo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px; }
+    .galeria-macetas .titulo h2 {
+      text-align: center;
+      margin: 30px;
+      padding: 10px;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      border: 2px solid lightblue; }
+  .galeria-macetas .grid-galeria2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    max-width: 1700px;
+    margin: 0 auto; }
+    .galeria-macetas .grid-galeria2 .grid2-item img {
+      height: 100%;
+      width: 100%;
+      border: 5px solid #d2f1fc;
+      transition: 1s; }
+      .galeria-macetas .grid-galeria2 .grid2-item img:hover {
+        transform: scale(1.05);
+        box-shadow: 15px -19px 14px 2px rgba(143, 141, 141, 0.75);
+        -webkit-box-shadow: 15px -19px 14px 2px rgba(143, 141, 141, 0.75);
+        -moz-box-shadow: 15px -19px 14px 2px rgba(143, 141, 141, 0.75); }
+    .galeria-macetas .grid-galeria2 .grid2-item .maceta1 {
+      grid-row: 1 / 3; }
+    .galeria-macetas .grid-galeria2 .grid2-item .maceta2 {
+      grid-column: span 2; }
+    .galeria-macetas .grid-galeria2 .grid2-item .maceta4 {
+      grid-row: 2 / 4; }
+
+/* -----------------PAGE-SERVICIOS-------------- */
+.servicios {
+  background-color: #d6fad6; }
+  .servicios div h1 {
+    font-size: 40px;
+    height: 100px;
+    padding: 10px;
+    background-color: #d6fad6;
+    color: lightblue;
+    margin: 0; }
+  .servicios .bodas {
+    background-image: url(../img/servicios/bodas.jpg); }
+  .servicios .cumpleanios {
+    background-image: url(../img/servicios/bodas.jpg); }
+  .servicios .bautismos {
+    background-image: url(../img/servicios/bodas.jpg); }
+  .servicios .almuerzosycenas {
+    background-image: url(../img/servicios/bodas.jpg); }
+  .servicios p {
+    font-weight: 900;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #d6fad6;
+    color: lightblue;
+    margin: 0;
+    margin-right: 20px; }
+
+/* ---------------PAGE-NOSOTROS------------ */
+.acerca-de {
+  background-color: #d6fad6; }
+  .acerca-de h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: lightblue;
+    font-size: 40px;
+    font-weight: 500; }
+  .acerca-de p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    color: #0000008C; }
+  .acerca-de img {
+    height: 800px;
+    width: 100%; }
+
+.autora {
+  background-color: #d6fad6; }
+  .autora h2 {
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    background-color: #ffd2cb; }
+  .autora div div {
+    width: 50%;
+    margin: 50px; }
+    .autora div div img {
+      height: 500px;
+      width: 300px;
+      margin-right: 50px; }
+    .autora div div div {
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      color: #0000008C; }
+
+/* ---------------PAGE-CONTACTO------------ */
+.contacto {
+  background-color: #d2f1fc;
+  height: 500px; }
+  .contacto h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; }
+  .contacto form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .contacto form .container-datos {
+      margin-left: 100px;
+      color: #0000008C; }
+      .contacto form .container-datos div {
+        display: flex;
+        flex-direction: column; }
+        .contacto form .container-datos div input {
+          width: 600px; }
+    .contacto form .container-consulta {
+      color: #0000008C; }
+      .contacto form .container-consulta div {
+        width: 600px; }
+        .contacto form .container-consulta div h2 {
+          text-align: center; }
+        .contacto form .container-consulta div div textarea {
+          width: 100%; }
+      .contacto form .container-consulta .botones {
+        display: flex;
+        justify-content: space-around; }
+
+/*------------------FOOTER-----------------*/
+footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  footer div div {
+    display: flex;
+    flex-direction: column; }
+    footer div div h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 30px;
+      font-weight: 600; }
+    footer div div .div-logos {
+      display: flex;
+      flex-direction: row;
+      margin: 20px; }
+      footer div div .div-logos a .logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        transition: 1.5s; }
+        footer div div .div-logos a .logo:hover {
+          transform: scale(0.75); }
+  footer div .ubicacion {
+    display: flex;
+    flex-direction: column;
+    margin: 20px; }
+    footer div .ubicacion h2 {
+      margin: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600; }
+    footer div .ubicacion iframe {
+      height: 200px;
+      width: 500px; }
+
+footer a .logowhatsapp {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  height: 60px; }
+
+footer h3 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0; }
+
+/*!--------MEDIA QUERY-----------*/
+@media screen and (max-width: 1400px) {
+  .contacto {
+    height: 100%; }
+    .contacto form {
+      display: flex;
+      flex-direction: column; }
+      .contacto form .container-datos {
+        margin: 0; }
+      .contacto form .container-consulta {
+        margin: 0; }
+        .contacto form .container-consulta .botones input {
+          margin: 10px; } }
+
+@media screen and (max-width: 1260px) {
+  .hero {
+    font-size: 40px; }
+    .hero p {
+      font-size: 30px; }
+  .servicios div h1 {
+    font-size: 30px; }
+  .servicios .bodas {
+    height: 300px; }
+  .servicios .cumpleanios {
+    height: 300px; }
+  .servicios .bautismos {
+    height: 300px; }
+  .servicios .almuerzosycenas {
+    height: 300px; }
+  .servicios p {
+    height: 100px;
+    font-size: 15px;
+    text-align: end; }
+  .acerca-de p {
+    font-size: 20px; }
+  .autora div div div p {
+    width: 300px; } }
+
+@media screen and (max-width: 1000px) {
+  .galeria-cactus .grid-galeria1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px; }
+    .galeria-cactus .grid-galeria1 .grid1-item {
+      grid-column: span 1; }
+  .galeria-macetas .grid-galeria2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px; }
+    .galeria-macetas .grid-galeria2 .grid2-item {
+      grid-column: span 1; }
+  footer div {
+    display: flex;
+    flex-direction: column; }
+    footer div div h2 {
+      text-align: center;
+      margin: 20px; }
+    footer div .ubicacion h2 {
+      margin-top: 0; } }
+
+@media screen and (max-width: 900px) {
+  .aniadidosrecientemente {
+    height: 100%; }
+    .aniadidosrecientemente .divpadre {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .aniadidosrecientemente .divpadre div {
+        margin: 10px; }
+  .comentarios {
+    height: 100%; }
+    .comentarios .contenedor div {
+      margin: 10px; }
+  .servicios .bodas {
+    height: 200px; }
+  .servicios .cumpleanios {
+    height: 200px; }
+  .servicios .bautismos {
+    height: 200px; }
+  .servicios .almuerzosycenas {
+    height: 200px; } }
+
+@media screen and (max-width: 800px) {
+  .galeria div img {
+    margin: 10px;
+    height: 300px;
+    width: 300px; }
+  .servicios p {
+    height: 150px;
+    font-size: 15px; }
+  .acerca-de img {
+    height: 600px; }
+  .acerca-de p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 700px) {
+  footer {
+    font-size: 10px; }
+  .galeria .link {
+    margin-right: 10px; }
+  .servicios div h1 {
+    font-size: 25px; }
+  .servicios div h3 {
+    font-size: 20px; }
+  .autora div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .autora div div img {
+      height: 400px;
+      width: 250px;
+      margin: 0; }
+    .autora div div div {
+      text-align: center; }
+  .contacto form .container-datos div input {
+    width: 400px; }
+  .contacto form .container-consulta div {
+    width: 100%; }
+    .contacto form .container-consulta div div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contacto form .container-consulta div div textarea {
+        width: 400px; } }
+
+@media screen and (max-width: 610px) {
+  .comentarios {
+    height: 100%; }
+    .comentarios h2 {
+      margin: 20px; }
+  .galeria-cactus .grid-galeria1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .galeria-cactus .grid-galeria1 .grid1-item {
+      height: 300px;
+      width: 300px;
+      margin: 20px;
+      border: 5px solid white; }
+  .galeria-macetas .grid-galeria2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .galeria-macetas .grid-galeria2 .grid2-item {
+      height: 300px;
+      width: 300px;
+      margin: 20px; }
+  .galeria-suculentas .carrusel div div div img {
+    height: 350px; }
+  .servicios .bodas {
+    height: 150px; }
+  .servicios .cumpleanios {
+    height: 150px; }
+  .servicios .bautismos {
+    height: 150px; }
+  .servicios .almuerzosycenas {
+    height: 150px; }
+  .acerca-de h2 {
+    font-size: 30px; }
+  .acerca-de img {
+    height: 500px; }
+  .autora h2 {
+    font-size: 30px; }
+  .contacto form .container-consulta {
+    width: 100%; }
+  footer div div h2 {
+    font-size: 20px; }
+  footer a .logowhatsapp {
+    right: 25px;
+    bottom: 25px; } }
+
+@media screen and (max-width: 520px) {
+  footer div .ubicacion iframe {
+    height: 150px;
+    width: 300px; }
+  .galeria h2 {
+    text-align: center; }
+  .servicios div h1 {
+    font-size: 15px; }
+  .servicios p {
+    height: 100px;
+    font-size: 12px;
+    margin-left: 10px; }
+  .servicios .acerca-de img {
+    height: 350px; }
+  .servicios .contacto form .container-datos div input {
+    width: 250px; }
+  .servicios .contacto form .container-consulta div div textarea {
+    height: 200px;
+    width: 275px; } }
+
+@media screen and (max-width: 400px) {
+  .hero {
+    height: 400px;
+    background-attachment: local; }
+    .hero h1 {
+      font-size: 25px; }
+    .hero p {
+      font-size: 15px; }
+  .galeria div img {
+    margin: 10px;
+    height: 200px;
+    width: 200px; }
+  .galeria-suculentas .carrusel div div div img {
+    height: 250px; }
+  .servicios p {
+    height: 100px;
+    font-size: 10px;
+    margin-left: 10px; } }

@@ -1,0 +1,33 @@
+
+    $colores-bg:
+    rgb(255, 210, 203),
+    rgb(214, 250, 214),
+    rgb(210, 241, 252);
+
+    $colores-texto:
+    white,
+    lightblue,
+    #0000008C;
+/*-----------EXTENDS-----------*/
+    %flex-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    %bg-servicios{
+        height: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    %titulos-servicios{
+        color: white;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    @mixin tamanio ($alto,$ancho){
+        height: $alto;
+        width: $ancho;
+    }

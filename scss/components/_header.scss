@@ -1,0 +1,40 @@
+/*-------------------HEADER-------------------*/
+header{
+    background-color:  rgb(250, 215, 209);
+    nav{
+        div{
+            a{
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            div{
+                ul{
+                    list-style: none;
+                    display: flex;
+                    li{
+                        margin: 30px;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            font-weight: 900;
+                        }
+                    }
+                }
+                .d-flex{
+                    button{
+                        color: #0000008C;;
+                        border: solid 1px #0000008C;
+                        transition: 1s;
+                        &:hover{
+                            color: green;
+                            background-color: lightblue;
+                            border: dotted 1px green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

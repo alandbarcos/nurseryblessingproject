@@ -275,7 +275,7 @@ header nav ul li a{
 }
 /* -----------------PAGE-SERVICIOS-------------- */
 .servicios{
-    background-color: rgb(214, 250, 214)
+    background-color: rgb(214, 250, 214);
 }
 .servicios div h1{
     display: flex;
@@ -489,24 +489,14 @@ footer div div h2{
     flex-direction: row;
     margin: 20px;
 }
-.logoinstagram {
+.logo{
     width: 50px;
     height: 50px;
     margin-left: 20px;
     margin-right: 20px;
     transition: 1.5s;
 }
-.logoinstagram:hover{
-    transform: scale(0.75);
-}
-.logofacebook{
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    transition: 1.5s;
-}
-.logofacebook:hover{
+.logo:hover{
     transform: scale(0.75);
 }
 
@@ -800,7 +790,6 @@ footer h3{
     .container-consulta div textarea{
         height: 200px;
         width: 275px;
-
     } 
 
 }

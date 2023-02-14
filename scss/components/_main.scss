@@ -1,0 +1,421 @@
+/*------------------PAGE-INDEX------------------*/
+    .hero{
+        color: nth($colores-texto, 1);
+        text-align: center;
+        background-image: url(../img/fondo3.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        @include tamanio (100%, 700px);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h1{
+            font-size: 50px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 40px;
+        }
+    }
+    .aniadidosrecientemente{
+        height: 400px;
+        background-color: nth($colores-bg, 2);
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 700;
+            padding: 20px;
+            color: nth($colores-texto, 2);
+        }
+        .divpadre{
+            display: flex;
+            justify-content: space-around;
+            div{
+                font-family: 'Montserrat', sans-serif;
+                border-radius: 10px;
+                border: 2px solid rgb(255, 210, 203);
+                @include tamanio (100%, 200px);
+                text-align: center;
+                img{
+                    width: 100%;
+                    height: 200px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+                h3{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                a{
+                    color: nth($colores-texto, 1);
+                    text-decoration: none;
+                    background-color: nth($colores-bg, 3);
+                    padding: 3px;
+                    font-family: 'Montserrat', sans-serif;
+                    transition: 1s;
+                    &:hover{
+                        background-color: rgb(255, 210, 203);
+                        color: green;
+                        border: 2px solid white;
+                    }
+                }
+            }
+        }
+    }
+    .galeria{
+        background-color: nth($colores-bg, 2);
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            padding: 20px;
+            color: nth($colores-texto, 2);
+            font-weight: 700;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            img{
+                margin: 10px;
+                @include tamanio (400px, 400px);
+                border-radius: 5px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .link{
+            display: flex;
+            justify-content: end;
+            a{
+                margin: 10px;
+                padding: 10px;
+                text-decoration: none;
+                color: nth($colores-texto, 2);
+                border: 2px solid white;
+                font-weight: 800;
+                transition: 0.5s;
+                &:hover{
+                    background-color: rgb(250, 215, 209);
+                    color: white;
+                }
+            }
+        }
+    }
+    .comentarios{
+        height: 70vh;
+        background-image: url(../img/fondo6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h2{
+            text-align: center;
+            color: nth($colores-texto, 1);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .contenedor{
+            color: nth($colores-texto, 1);
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            div{
+                background-color: rgb(250, 215, 209);
+                @include tamanio (100%, 300px);
+                border: 2px dotted white;
+                padding: 10px;
+                h3{
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                }
+                p{
+                    text-align: justify;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }
+    }
+/* -----------------PAGE-CATÁLOGO--------------- */
+    .galeria-cactus{
+        background-color: nth($colores-bg, 2);
+        .titulo{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            h2{
+                text-align: center;
+                margin: 30px;
+                padding: 10px;
+                color: nth($colores-texto, 1);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                border: 2px solid lightblue;
+            }
+        }
+        .grid-galeria1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: 400px;
+            gap: 10px;
+            .grid1-item{
+                img{
+                    @include tamanio (100%, 100%);
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+                }
+                .cactus-2{
+                    grid-row: span 2;
+                }
+                .cactus-4{
+                    grid-row: span 2;
+                }
+                .cactus-6{
+                    grid-column: span 2;
+                }
+                .cactus-7{
+                    grid-column: 1 / 3;
+                }
+            }
+        }
+    }
+    .galeria-suculentas{
+        background-color: nth($colores-bg, 2);
+        .carrusel{
+            .titulo{
+                display: flex;
+                justify-content: center;
+                padding-top: 10px;
+                h2{
+                    text-align: center;
+                    margin: 30px;
+                    padding: 10px;
+                    color: nth($colores-texto, 1);
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    border: 2px solid lightblue;
+                }
+            }
+            div{
+                div{
+                    div{
+                        img{
+                            @include tamanio (600px, 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .galeria-macetas{
+        background-color: nth($colores-bg, 2);
+        padding-top: 10px;
+        .titulo{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            h2{
+                text-align: center;
+                margin: 30px;
+                padding: 10px;
+                color: nth($colores-texto, 1);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                border: 2px solid lightblue;
+            }
+        }
+        .grid-galeria2{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-auto-rows: 400px;
+            max-width: 1700px;
+            margin: 0 auto;
+            .grid2-item{
+                img{
+                    @include tamanio (100%, 100%);
+                    border: 5px solid rgb(210, 241, 252);
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.05);
+                        box-shadow: 15px -19px 14px 2px rgba(143,141,141,0.75);
+                        -webkit-box-shadow: 15px -19px 14px 2px rgba(143,141,141,0.75);
+                        -moz-box-shadow: 15px -19px 14px 2px rgba(143,141,141,0.75);
+                    }
+                }
+                .maceta1{
+                    grid-row: 1 / 3;
+                }
+                .maceta2{
+                    grid-column: span 2;
+                }
+                .maceta4{
+                    grid-row: 2 / 4;
+                }
+            }
+        }
+    }
+/* -----------------PAGE-SERVICIOS-------------- */
+    .servicios{
+        background-color: nth($colores-bg, 2);
+        div{
+            h1{
+                @extend %flex-center;
+                font-size: 40px;
+                height: 100px;
+                padding: 10px;
+                background-color: nth($colores-bg, 2);
+                color: nth($colores-texto, 2);
+                margin: 0;
+            }
+        }
+        .bodas{
+            background-image: url(../img/servicios/bodas.jpg);
+            @extend %bg-servicios;
+            @extend %flex-center;
+            h3{
+                @extend %titulos-servicios;
+            }
+        }
+        .cumpleanios{
+            background-image: url(../img/servicios/bodas.jpg);
+            @extend %bg-servicios;
+            @extend %flex-center;
+            h3{
+                @extend %titulos-servicios;
+            }
+        }
+        .bautismos{
+            background-image: url(../img/servicios/bodas.jpg);
+            @extend %bg-servicios;
+            @extend %flex-center;
+            h3{
+                @extend %titulos-servicios;
+            }
+        }
+        .almuerzosycenas{
+            background-image: url(../img/servicios/bodas.jpg);
+            @extend %bg-servicios;
+            @extend %flex-center;
+            h3{
+                @extend %titulos-servicios;
+            }
+        }
+        p{
+            font-weight: 900;
+            height: 50px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            background-color: nth($colores-bg, 2);
+            color: nth($colores-texto, 2);
+            margin: 0;
+            margin-right: 20px; 
+        }
+    }
+/* ---------------PAGE-NOSOTROS------------ */
+    .acerca-de{
+        background-color: nth($colores-bg, 2);
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            padding: 20px;
+            color: nth($colores-texto, 2);
+            font-size: 40px;
+            font-weight: 500;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            padding: 10px;
+            text-align: center;
+            color: nth($colores-texto, 3);
+        }
+        img{
+            @include tamanio (800px, 100%);
+        }
+    }
+    .autora{
+        background-color: nth($colores-bg, 2);
+        h2{
+            text-align: center;
+            padding: 30px;
+            font-size: 40px;
+            color: nth($colores-texto, 1);
+            font-weight: 700;
+            background-color: nth($colores-bg, 1);
+        }
+        div{
+            @extend %flex-center;
+            div{
+                width: 50%;
+                margin: 50px;
+                img{
+                    @include tamanio (500px, 300px);
+                    margin-right: 50px;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: justify;
+                    color: nth($colores-texto, 3);
+                }
+            }
+        }
+    }
+/* ---------------PAGE-CONTACTO------------ */
+    .contacto{
+        background-color: nth($colores-bg, 3);
+        height: 500px;
+        h1{
+            text-align: center;
+            padding: 20px;
+            color: nth($colores-texto, 1);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        form{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .container-datos{
+                margin-left: 100px;
+                color: nth($colores-texto, 3);
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        width: 600px;
+                    }
+                }
+            }
+            .container-consulta{
+                color: nth($colores-texto, 3);
+                div{
+                    width: 600px;
+                    h2{
+                        text-align: center;
+                    }
+                    div{
+                        textarea{
+                            width: 100%;
+                        }
+                    }
+                    
+                }
+                .botones{
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
