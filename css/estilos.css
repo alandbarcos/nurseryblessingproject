@@ -9,7 +9,7 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 /*-----------EXTENDS-----------*/
-.servicios div h1, .servicios .bodas, .servicios .cumpleanios, .servicios .bautismos, .servicios .almuerzosycenas, .autora div {
+.comentarios .contenedor div, .servicios div h1, .servicios .bodas, .servicios .cumpleanios, .servicios .bautismos, .servicios .almuerzosycenas, .autora div {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -171,7 +171,8 @@ header {
       height: 100%;
       width: 300px;
       border: 2px dotted white;
-      padding: 10px; }
+      padding: 10px;
+      flex-direction: column; }
       .comentarios .contenedor div h3 {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
