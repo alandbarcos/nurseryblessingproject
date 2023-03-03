@@ -9,7 +9,7 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 /*-----------EXTENDS-----------*/
-.comentarios .contenedor div, .servicios div h1, .servicios .bodas, .servicios .cumpleanios, .servicios .bautismos, .servicios .almuerzosycenas, .autora div {
+.aniadidosrecientemente .divpadre .card div, .comentarios .contenedor div, .galeria-cactus .nuestros-productos, .servicios div h1, .servicios .bodas, .servicios .cumpleanios, .servicios .bautismos, .servicios .almuerzosycenas, .autora div {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -83,33 +83,39 @@ header {
   .aniadidosrecientemente .divpadre {
     display: flex;
     justify-content: space-around; }
-    .aniadidosrecientemente .divpadre div {
+    .aniadidosrecientemente .divpadre .card {
       font-family: 'Montserrat', sans-serif;
       border-radius: 10px;
       border: 2px solid #ffd2cb;
-      height: 100%;
+      height: 300px;
       width: 200px;
-      text-align: center; }
-      .aniadidosrecientemente .divpadre div img {
+      text-align: center;
+      background-color: #d6fad6; }
+      .aniadidosrecientemente .divpadre .card img {
         width: 100%;
         height: 200px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px; }
-      .aniadidosrecientemente .divpadre div h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
-        font-weight: 500; }
-      .aniadidosrecientemente .divpadre div a {
-        color: white;
-        text-decoration: none;
-        background-color: #d2f1fc;
-        padding: 3px;
-        font-family: 'Montserrat', sans-serif;
-        transition: 1s; }
-        .aniadidosrecientemente .divpadre div a:hover {
-          background-color: #ffd2cb;
-          color: green;
-          border: 2px solid white; }
+      .aniadidosrecientemente .divpadre .card div {
+        height: 100px;
+        flex-direction: column; }
+        .aniadidosrecientemente .divpadre .card div h3 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 20px;
+          font-weight: 500; }
+        .aniadidosrecientemente .divpadre .card div a {
+          color: #0000008C;
+          text-decoration: none;
+          background-color: #d2f1fc;
+          font-weight: 700;
+          padding: 5px;
+          border: 1px solid #ffd2cb;
+          font-family: 'Montserrat', sans-serif;
+          transition: 1s; }
+          .aniadidosrecientemente .divpadre .card div a:hover {
+            background-color: #ffd2cb;
+            color: green;
+            border: 2px solid white; }
 
 .galeria {
   background-color: #d6fad6; }
@@ -118,6 +124,7 @@ header {
     font-size: 25px;
     padding: 20px;
     color: lightblue;
+    text-decoration: double underline;
     font-weight: 700; }
   .galeria div {
     display: flex;
@@ -139,7 +146,7 @@ header {
       padding: 10px;
       text-decoration: none;
       color: lightblue;
-      border: 2px solid white;
+      border: 3px solid white;
       font-weight: 800;
       transition: 0.5s; }
       .galeria .link a:hover {
@@ -162,7 +169,7 @@ header {
     font-size: 25px;
     font-weight: 600; }
   .comentarios .contenedor {
-    color: white;
+    color: #0000008C;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
@@ -179,15 +186,22 @@ header {
         font-weight: 500; }
       .comentarios .contenedor div p {
         text-align: justify;
-        font-family: 'Montserrat', sans-serif; }
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px; }
 
 /* -----------------PAGE-CATÁLOGO--------------- */
 .galeria-cactus {
   background-color: #d6fad6; }
+  .galeria-cactus .nuestros-productos {
+    height: 100px; }
+    .galeria-cactus .nuestros-productos h1 {
+      text-align: center;
+      padding: 10px;
+      font-weight: 700;
+      color: lightblue; }
   .galeria-cactus .titulo {
     display: flex;
-    justify-content: center;
-    padding-top: 10px; }
+    justify-content: center; }
     .galeria-cactus .titulo h2 {
       text-align: center;
       margin: 30px;
@@ -195,7 +209,12 @@ header {
       color: white;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      border: 2px solid lightblue; }
+      border: 2px solid lightblue;
+      transition: 0.5s; }
+      .galeria-cactus .titulo h2:hover {
+        background-color: #fad7d1;
+        color: green;
+        border: 2px solid #0000008C; }
   .galeria-cactus .grid-galeria1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -229,7 +248,12 @@ header {
       color: white;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      border: 2px solid lightblue; }
+      border: 2px solid lightblue;
+      transition: 0.5s; }
+      .galeria-suculentas .carrusel .titulo h2:hover {
+        background-color: #fad7d1;
+        color: green;
+        border: 2px solid #0000008C; }
   .galeria-suculentas .carrusel div div div img {
     height: 600px;
     width: 100%; }
@@ -248,7 +272,12 @@ header {
       color: white;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      border: 2px solid lightblue; }
+      border: 2px solid lightblue;
+      transition: 0.5s; }
+      .galeria-macetas .titulo h2:hover {
+        background-color: #fad7d1;
+        color: green;
+        border: 2px solid #0000008C; }
   .galeria-macetas .grid-galeria2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -277,6 +306,7 @@ header {
   background-color: #d6fad6; }
   .servicios div h1 {
     font-size: 40px;
+    font-weight: 700;
     height: 100px;
     padding: 10px;
     background-color: #d6fad6;
@@ -297,20 +327,20 @@ header {
     justify-content: end;
     align-items: center;
     background-color: #d6fad6;
-    color: lightblue;
+    color: #0000008C;
     margin: 0;
     margin-right: 20px; }
 
 /* ---------------PAGE-NOSOTROS------------ */
 .acerca-de {
   background-color: #d6fad6; }
-  .acerca-de h2 {
+  .acerca-de h1 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    font-weight: 700;
     padding: 20px;
     color: lightblue;
-    font-size: 40px;
-    font-weight: 500; }
+    font-size: 40px; }
   .acerca-de p {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
@@ -375,7 +405,16 @@ header {
           width: 100%; }
       .contacto form .container-consulta .botones {
         display: flex;
-        justify-content: space-around; }
+        justify-content: space-around;
+        padding: 10px; }
+        .contacto form .container-consulta .botones input {
+          padding: 5px;
+          transition: 1s; }
+          .contacto form .container-consulta .botones input:hover {
+            background-color: #10d7e6;
+            border-radius: 10px;
+            color: white;
+            font-weight: 700; }
 
 /*------------------FOOTER-----------------*/
 footer {
