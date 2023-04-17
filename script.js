@@ -1,5 +1,5 @@
 
-let producto = (prompt("¡Bienvenido/a a Nursery Blessing Project! Te mostramos nuestra lista de productos, ingresá la opción deseada para verificar stock (Opción 0 para terminar): \n\n1-Maceta de cerámica (Animales)\n2-Maceta de barro (Simple)\n3-Cactus pequeño\n4-Suculenta pequeña\n5-Suculenta mediana\n6-Maceta + suculenta/cactus"));
+/* let producto = (prompt("¡Bienvenido/a a Nursery Blessing Project! Te mostramos nuestra lista de productos, ingresá la opción deseada para verificar stock (Opción 0 para terminar): \n\n1-Maceta de cerámica (Animales)\n2-Maceta de barro (Simple)\n3-Cactus pequeño\n4-Suculenta pequeña\n5-Suculenta mediana\n6-Maceta + suculenta/cactus"));
 let opcion;
 let descripcionCompra = "";
 let subtotal = 0;
@@ -75,4 +75,4 @@ while(producto!=0){
     producto = (prompt("Ingresá la opción deseada para verificar stock (Opción 0 para terminar): \n\n1-Maceta de cerámica (Animales)\n2-Maceta de barro (Simple)\n3-Cactus pequeño\n4-Suculenta pequeña\n5-Suculenta mediana\n6-Maceta + suculenta/cactus"));
 }
 alert("Productos seleccionados: " + descripcionCompra + "\n\nSubtotal: $" + subtotal + "\nIVA 21%: $" + iva);
-mostrarTotal(subtotal,iva);
+mostrarTotal(subtotal,iva); */
