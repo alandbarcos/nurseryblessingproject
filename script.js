@@ -36,13 +36,13 @@ function CreaServicio (nombreServ,precioServ){
     this.precio = precioServ;
 }
 
-function validarDato(dato){
+function validarDato(dato,nota){
 
     if(dato==null || dato=="" || dato==isNaN)
     {
         do{
             alert("Ingrese una opción válida.");
-            dato = (prompt("¡Bienvenido/a a Nursery Blessing Project! Por favor indicanos sobre que prestación te gustaria consultar (Opción 0 para terminar): \n\n1-Productos \n2-Servicios"));
+            dato = (prompt(nota)).toUpperCase();
         }while(dato==null || dato=="" || dato==isNaN);
     }
     return dato;
@@ -73,12 +73,13 @@ function mostrarTotal(a,b){
 
 
 opcion = (prompt("¡Bienvenido/a a Nursery Blessing Project! Por favor indicanos sobre que prestación te gustaria consultar (Opción 0 para terminar): \n\n1-Productos \n2-Servicios"));
-opcion = validarDato(opcion);
+opcion = validarDato(opcion,"¡Bienvenido/a a Nursery Blessing Project! Por favor indicanos sobre que prestación te gustaria consultar (Opción 0 para terminar): \n\n1-Productos \n2-Servicios");
 
 while(opcion!=0){
     switch(opcion){
         case '1':
             producto = prompt("Ingrese el producto que desea buscar (Macetas, cactus o suculentas): ").toUpperCase();
+            producto = validarDato(producto,"Ingrese el producto que desea buscar (Macetas, cactus o suculentas): ");
             busqueda = Productos.filter((pedido) => pedido.nombre.includes(producto));
             if(busqueda!=""){
                 for(let i=0; i<busqueda.length; i++){
@@ -112,7 +113,7 @@ while(opcion!=0){
             alert("Ingrese una opción válida.");
     }
     opcion = (prompt("¡Bienvenido/a a Nursery Blessing Project! Por favor indicanos sobre que prestación te gustaria consultar (Opción 0 para terminar): \n\n1-Productos \n2-Servicios"));
-    opcion = validarDato(opcion);
+    opcion = validarDato(opcion,"¡Bienvenido/a a Nursery Blessing Project! Por favor indicanos sobre que prestación te gustaria consultar (Opción 0 para terminar): \n\n1-Productos \n2-Servicios");
     
 }
 alert("Productos seleccionados: " + descripcionCompra + "\n\nSubtotal: $" + subtotal + "\nIVA 21%: $" + iva + "\n\nCalculando total, presione ENTER.");
