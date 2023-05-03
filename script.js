@@ -78,7 +78,7 @@ opcion = validarDato(opcion);
 while(opcion!=0){
     switch(opcion){
         case '1':
-            producto = prompt("Ingrese el producto que desea buscar: ").toUpperCase();
+            producto = prompt("Ingrese el producto que desea buscar (Macetas, cactus o suculentas): ").toUpperCase();
             busqueda = Productos.filter((pedido) => pedido.nombre.includes(producto));
             if(busqueda!=""){
                 for(let i=0; i<busqueda.length; i++){
