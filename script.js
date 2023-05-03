@@ -10,10 +10,10 @@ let producto;
 let busqueda;
 
 const prod1 = new CreaProducto("Macetas de cerámica (Animales)", 1600 , 130);
-const prod2 = new CreaProducto("Macetas de barro (Simple)", 700 , 0);
-const prod3 = new CreaProducto("Cactus pequeño", 230 , 53);
-const prod4 = new CreaProducto("Suculentas pequeña", 200 , 0);
-const prod5 = new CreaProducto("Suculentas mediana", 300 , 36);
+const prod2 = new CreaProducto("Macetas de barro (Simples)", 700 , 0);
+const prod3 = new CreaProducto("Cactus pequeños", 230 , 53);
+const prod4 = new CreaProducto("Suculentas pequeñas", 200 , 0);
+const prod5 = new CreaProducto("Suculentas medianas", 300 , 36);
 const prod6 = new CreaProducto("Macetas + suculentas/cactus", 2100 , 42);
 
 const servBodas = new CreaServicio("Bodas", 35000);
