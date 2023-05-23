@@ -73,6 +73,46 @@
             }
         }
     }
+    section{
+        background-color: nth($colores-bg, 2);
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 700;
+            padding: 20px;
+            color: nth($colores-texto, 2);
+        }
+        .compras{
+            height: 100%;
+            background-color: nth($colores-bg, 2);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid rgb(255, 210, 203);
+                border-radius: 10px;
+                margin: 10px;
+                h3{
+                    font-size: 15px;
+                    padding: 5px;
+                }
+                img{
+                    width: 100%;
+                    height: 450px;
+                }
+                button{
+                    width: 200px;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    
     .galeria{
         background-color: nth($colores-bg, 2);
         h2{
