@@ -73,8 +73,12 @@
             }
         }
     }
-    section{
+    .compras{
         background-color: nth($colores-bg, 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         h2{
             font-family: 'Montserrat', sans-serif;
             text-align: center;
@@ -83,7 +87,7 @@
             padding: 20px;
             color: nth($colores-texto, 2);
         }
-        .compras{
+        .productos{
             height: 100%;
             background-color: nth($colores-bg, 2);
             display: flex;
@@ -102,8 +106,8 @@
                     padding: 5px;
                 }
                 img{
-                    width: 100%;
-                    height: 450px;
+                    width: 300px;
+                    height: 300px;
                 }
                 button{
                     width: 200px;
@@ -111,7 +115,43 @@
                 }
             }
         }
+        .ventanaCarrito{
+            width: 600px;
+            height: 100%;
+            .encabezadoCarrito{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                h2{
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            }
+            .contenidoCarrito{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                h3{
+                    margin: 20px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                img{
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+            .totalCarrito{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
     }
+}
     
     .galeria{
         background-color: nth($colores-bg, 2);
