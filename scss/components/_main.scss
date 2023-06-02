@@ -116,8 +116,13 @@
             }
         }
         .ventanaCarrito{
-            width: 600px;
-            height: 100%;
+            width: 70%;
+            position: fixed;
+            overflow: auto;
+            max-height: 80vh;
+            z-index: 9;
+            top: 12vh;
+            background-color: nth($colores-bg, 2);
             .encabezadoCarrito{
                 display: flex;
                 justify-content: space-around;
@@ -133,7 +138,12 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                margin: 10px;
+                border: 1px solid white;
+                border-left: none;
+                border-right: none;
                 h3{
+                    width: 300px;
                     margin: 20px;
                     font-size: 20px;
                     display: flex;
@@ -143,13 +153,26 @@
                 img{
                     height: 100px;
                     width: 100px;
+                    margin-right: 50px;
                 }
             }
             .totalCarrito{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-        }
+                margin: 30px;
+                margin-bottom: 0;
+                h3{
+                    margin: 20px
+                }
+            }
+            .operacion{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 30px;
+                margin-top: 0;
+            }
     }
 }
     

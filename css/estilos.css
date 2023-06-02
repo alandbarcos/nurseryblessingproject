@@ -45,7 +45,7 @@ header {
   header nav div div img {
     width: 30px;
     height: 30px;
-    background-color: #fad7d1; }
+    color: #0000008C; }
   header nav div div .d-flex button {
     color: #0000008C;
     border: solid 1px #0000008C;
@@ -158,8 +158,13 @@ header {
         width: 200px;
         margin: 10px; }
   .compras .ventanaCarrito {
-    width: 600px;
-    height: 100%; }
+    width: 70%;
+    position: fixed;
+    overflow: auto;
+    max-height: 80vh;
+    z-index: 9;
+    top: 12vh;
+    background-color: #d6fad6; }
     .compras .ventanaCarrito .encabezadoCarrito {
       display: flex;
       justify-content: space-around;
@@ -172,8 +177,13 @@ header {
     .compras .ventanaCarrito .contenidoCarrito {
       display: flex;
       flex-direction: row;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin: 10px;
+      border: 1px solid white;
+      border-left: none;
+      border-right: none; }
       .compras .ventanaCarrito .contenidoCarrito h3 {
+        width: 300px;
         margin: 20px;
         font-size: 20px;
         display: flex;
@@ -181,11 +191,22 @@ header {
         align-items: center; }
       .compras .ventanaCarrito .contenidoCarrito img {
         height: 100px;
-        width: 100px; }
+        width: 100px;
+        margin-right: 50px; }
     .compras .ventanaCarrito .totalCarrito {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      margin: 30px;
+      margin-bottom: 0; }
+      .compras .ventanaCarrito .totalCarrito h3 {
+        margin: 20px; }
+    .compras .ventanaCarrito .operacion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      margin-top: 0; }
 
 .galeria {
   background-color: #d6fad6; }

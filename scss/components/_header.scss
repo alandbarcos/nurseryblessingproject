@@ -25,11 +25,11 @@ header{
                 img{
                     width: 30px;
                     height: 30px;
-                    background-color:  rgb(250, 215, 209);
+                    color: #0000008C;
                 }
                 .d-flex{
                     button{
-                        color: #0000008C;;
+                        color: #0000008C;
                         border: solid 1px #0000008C;
                         transition: 1s;
                         &:hover{
