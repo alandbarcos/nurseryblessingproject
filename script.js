@@ -9,7 +9,7 @@ ventanaCarrito.className = "ventanaCarrito";
 const contenedorCarrito = document.createElement("div");
 
 const obtenerProductos = async () =>{
-    const response = await fetch("/productos.json");
+    const response = await fetch("https://raw.githubusercontent.com/alandbarcos/nurseryblessingproject/master/productos.json");
     const data = await response.json();
 
     data.forEach((producto) =>{
