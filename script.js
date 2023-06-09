@@ -2,8 +2,6 @@
 let subtotal = 0;
 let iva = 0;
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-let producto;
-let busqueda;
 const compras = document.getElementById("productos");
 const verCarrito = document.getElementById("verCarrito");
 const ventanaCarrito = document.getElementById("ventanaCarrito");
