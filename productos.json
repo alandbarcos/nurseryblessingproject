@@ -1,0 +1,81 @@
+[{
+    "codigo": 1,
+    "nombre": "Maceta de cerámica (Erizo)",
+    "precio": 1600,
+    "stock": 130,
+    "imagen": "./img/terminados/erizo1.jpeg",
+    "cantidad": 1
+},
+{
+    "codigo": 2,
+    "nombre": "Maceta de barro (Simple)",
+    "precio": 700,
+    "stock": 67,
+    "imagen": "./img/macetas/maceta-de-barro-clasica.jpg",
+    "cantidad": 1
+},
+{
+    "codigo": 3,
+    "nombre": "Cactus pequeño",
+    "precio": 230,
+    "stock": 53,
+    "imagen": "./img/cactus/cactus8.jpg",
+    "cantidad": 1
+},
+{
+    "codigo": 4,
+    "nombre": "Suculenta pequeña",
+    "precio": 200,
+    "stock": 82,
+    "imagen": "./img/suculentas/suculenta-pequeña.jpg",
+    "cantidad": 1
+},
+{
+    "codigo": 5,
+    "nombre": "Suculenta mediana",
+    "precio": 300,
+    "stock": 36,
+    "imagen": "./img/suculentas/suculenta-mediana.jpg",
+    "cantidad": 1
+},
+{
+    "codigo": 6,
+    "nombre": "Maceta + suculenta/cactus",
+    "precio": 2100,
+    "stock": 42,
+    "imagen": "./img/terminados/suculenta6.jpeg",
+    "cantidad": 1
+},
+{
+    "codigo": 7,
+    "nombre": "Maceta de cerámica (Casa)",
+    "precio": 1200,
+    "stock": 23,
+    "imagen": "./img/macetas/casa.jpeg",
+    "cantidad": 1
+},
+{
+    "codigo": 8,
+    "nombre": "Maceta de yeso (Vaca)",
+    "precio": 1400,
+    "stock": 15,
+    "imagen": "./img/macetas/vaca.jpeg",
+    "cantidad": 1
+},
+{
+    "codigo": 9,
+    "nombre": "Maceta de cerámica (Elefante)",
+    "precio": 900,
+    "stock": 18,
+    "imagen": "./img/macetas/elefante.jpg",
+    "cantidad": 1
+},
+{
+    "codigo": 10,
+    "nombre": "Maceta grande C/Mix de suculentas",
+    "precio": 2500,
+    "stock": 59,
+    "imagen": "./img/terminados/mix2.jpeg",
+    "cantidad": 1
+}
+]
